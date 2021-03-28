@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 DESCRIPTION = "Run shell commands with python and get outputs"
 LONG_DESCRIPTION = """As a developer I need to run shell commands and check the output and based on the outputI make the decision.
 So to help developers who just want to run some shell commands with python here is the simple module :)
@@ -12,6 +12,7 @@ setup(
     name = 'shellit',
     version = VERSION,
     author = 'amit',
+    url='https://github.com/amitdev101/shellit',
     description = DESCRIPTION,
     long_description = LONG_DESCRIPTION,
     packages = find_packages(),
