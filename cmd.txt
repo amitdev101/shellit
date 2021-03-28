@@ -1,0 +1,11 @@
+1. pip install wheel
+2. python setup.py sdist bdist_wheel
+
+now we will upload our module.
+3. pip install twine
+4. twine upload dist/*
+
+To reupload the correct file you should use the following command
+5. twine upload --skip-existing dist/*
+or 
+twine upload --skip-existing --repository-url https://test.pypi.org/legacy/ dist/*
