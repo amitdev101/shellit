@@ -20,6 +20,7 @@ def execute_cmd(cmd:str,
     @param cmd(str) : cmd is a string which you want to execute with shell
     @param shell(bool) : shell is set to True to execute all commands in shell without any restrictions
     @param force(bool) : force to execute all commands even rm command.
+    @param outputfilename(str) : name of the file in which output will be saved.
     return 'returncode'(int) : 0 for successful.
                                 any other num for unsuccessful command or if any error is thrown by the command.
             'output'(str) : An output string 
@@ -67,8 +68,8 @@ if __name__=='__main__':
         # cmd = 'dir'
         cmd = "python shellit/extra_feature_test/async_print_test.py"
     else :
-        # cmd = 'ls'
-        cmd = "python extra_feature_test/async_print_test.py"
+        cmd = 'ls'
+        # cmd = "python extra_feature_test/async_print_test.py"
     # wrong cmd executing by adding any variable say 'a'
     # cmd+='aaaaaaaaaaaaaaaa' # surely this won't exist
     
