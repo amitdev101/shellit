@@ -2,3 +2,5 @@
 build/*
 dist/*
 shellit.egg-info/*
+test_out.txt
+shellit_output.txt

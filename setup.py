@@ -1,11 +1,12 @@
 from setuptools import find_packages, setup
+import io
 
-VERSION = '0.0.3'
-DESCRIPTION = "Run shell commands with python and get outputs"
-LONG_DESCRIPTION = """As a developer I need to run shell commands and check the output and based on the outputI make the decision.
-So to help developers who just want to run some shell commands with python here is the simple module :)
-Just install and run shell commands
-"""
+VERSION = '0.0.4'
+DESCRIPTION = "Run shell commands with python and get returncode,outputs as python variables. Also it will simultaneously print the outputs"
+
+# Use the README.md content for the long description:
+with io.open("README.md", encoding="utf-8") as fileObj:
+    LONG_DESCRIPTION = fileObj.read()
 
 ### setting up out package ###
 setup(

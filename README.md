@@ -15,7 +15,8 @@ pip install shellit
 ```
 from shellit import execute_cmd 
 cmd = "ls"
-x = execute_cmd(cmd)
+returncode, output = execute_cmd(cmd)
+
 
 ```
 
@@ -23,6 +24,8 @@ x = execute_cmd(cmd)
 
 - [x] execute shell commands
 
-- [ ] saving and return outputs
+- [x] saving and return outputs
 
-- [ ] Logging of every command
+- [x] Simultaneously printing and saving the output
+
+- [ ] Testing on large output 
