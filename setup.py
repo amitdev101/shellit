@@ -16,6 +16,7 @@ setup(
     url='https://github.com/amitdev101/shellit',
     description = DESCRIPTION,
     long_description = LONG_DESCRIPTION,
+    long_description_content_type="text/markdown",
     packages = find_packages(),
     install_requires = [], ## 
     keywords = ['shellit','autoshell','shell','run shell in python',
